@@ -7,7 +7,7 @@ $(document).ready(function() {
   let clickCount = 0;
   $("#box-1").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0 && $("box-1").length <=0) {
+    if (clickCount % 2 === 0) {
       $("#box-1").append(`<div id="box-1">${"X"}</div>`)
     } else {
       $("#box-1").append(`<div id="box-1">${"O"}</div>`)
@@ -15,7 +15,8 @@ $(document).ready(function() {
   });
   $("#box-2").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0 && $("box-2").empty()){
+    if (clickCount % 2 === 0){
+      console.log("is empty")
       $("#box-2").append(`<div id="box-2">${"X"}</div>`)
     } else {
       $("#box-2").append(`<div id="box-2">${"O"}</div>`)
