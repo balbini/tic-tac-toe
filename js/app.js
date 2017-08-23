@@ -7,7 +7,7 @@ $(document).ready(function() {
   let clickCount = 0;
   $("#box-1").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-1").length <=0) {
       $("#box-1").append(`<div id="box-1">${"X"}</div>`)
     } else {
       $("#box-1").append(`<div id="box-1">${"O"}</div>`)
@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
   $("#box-2").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-2").empty()){
       $("#box-2").append(`<div id="box-2">${"X"}</div>`)
     } else {
       $("#box-2").append(`<div id="box-2">${"O"}</div>`)
@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
   $("#box-3").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-3").empty()){
       $("#box-3").append(`<div id="box-3">${"X"}</div>`)
     } else {
       $("#box-3").append(`<div id="box-3">${"O"}</div>`)
@@ -31,7 +31,7 @@ $(document).ready(function() {
   });
   $("#box-4").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-4").empty()){
       $("#box-4").append(`<div id="box-4">${"X"}</div>`)
     } else {
       $("#box-4").append(`<div id="box-4">${"O"}</div>`)
@@ -39,7 +39,7 @@ $(document).ready(function() {
   });
   $("#box-5").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-5").empty()){
       $("#box-5").append(`<div id="box-5">${"X"}</div>`)
     } else {
       $("#box-5").append(`<div id="box-5">${"O"}</div>`)
@@ -47,7 +47,7 @@ $(document).ready(function() {
   });
   $("#box-6").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-6").empty()){
       $("#box-6").append(`<div id="box-6">${"X"}</div>`)
     } else {
       $("#box-6").append(`<div id="box-6">${"O"}</div>`)
@@ -55,7 +55,7 @@ $(document).ready(function() {
   });
   $("#box-7").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-7").empty()){
       $("#box-7").append(`<div id="box-7">${"X"}</div>`)
     } else {
       $("#box-7").append(`<div id="box-7">${"O"}</div>`)
@@ -63,7 +63,7 @@ $(document).ready(function() {
   });
   $("#box-8").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-8").empty()){
       $("#box-8").append(`<div id="box-8">${"X"}</div>`)
     } else {
       $("#box-8").append(`<div id="box-8">${"O"}</div>`)
@@ -71,10 +71,11 @@ $(document).ready(function() {
   });
   $("#box-9").on("click",function(){
     clickCount ++
-    if (clickCount % 2 === 0){
+    if (clickCount % 2 === 0 && $("box-9").empty()){
       $("#box-9").append(`<div id="box-9">${"X"}</div>`)
     } else {
       $("#box-9").append(`<div id="box-9">${"O"}</div>`)
     };
   });
+  console.log($("#box-1").length);
 });
